@@ -18,6 +18,7 @@ height=400
 
 ).interactive()
 st.altair_chart(scatter)
+########################################################
 bargraph=alt.Chart(df).mark_bar().encode(
     y='TEAMS',
     x='TOTAL',
@@ -41,5 +42,6 @@ width=600,
 height=400
 
 ).interactive()
+#######################################
 st.altair_chart(bargraph)
 st.write('Above graphs show the comparison of teams performance in revenue collection.')
